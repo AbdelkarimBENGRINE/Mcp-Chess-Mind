@@ -2,17 +2,11 @@
 MCP Server Template
 """
 
-import io
-import requests
-from dataclasses import dataclass
-from typing import List, Optional, Tuple, Dict
-from collections import Counter, defaultdict
-from datetime import datetime, timedelta
-
-import chess
-import chess.pgn
-import chess.engine
 from mcp.server.fastmcp import FastMCP
+from pydantic import Field
+
+import mcp.types as types
+
 
 mcp = FastMCP("Echo Server", port=3000, stateless_http=True, debug=True)
 
