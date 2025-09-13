@@ -6,7 +6,7 @@ from mcp.server.fastmcp import FastMCP
 from pydantic import Field
 import mcp.types as types
 
-import chess
+# import chess
 # import chess.pgn
 # import chess.engine
 
