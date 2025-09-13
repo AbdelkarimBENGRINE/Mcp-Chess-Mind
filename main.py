@@ -4,9 +4,7 @@ MCP Server Template
 
 from mcp.server.fastmcp import FastMCP
 from pydantic import Field
-import chess
-import chess.pgn
-import chess.engine
+
 import mcp.types as types
 
 mcp = FastMCP("Echo Server", port=3000, stateless_http=True, debug=True)
